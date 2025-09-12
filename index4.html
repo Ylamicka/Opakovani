@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="node_modules/bootswatch/dist/lux/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
+  <title>Document</title>
+  <style>
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .card-body {
+      display: flex;
+      padding: 0;
+      min-height: 200px;
+    }
+
+    .card-half {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-half.image-half {
+      position: relative;
+    }
+
+    .card-half.image-half img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .flag-icon {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 48px;
+      height: 32px;
+      border: 2px solid white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      z-index: 2;
+      border-radius: 4px;
+    }
+
+    .card-half.text-half {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    @media (max-width: 576px) {
+      .col-custom {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    @media (min-width: 577px) and (max-width: 992px) {
+      .col-custom {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media (min-width: 993px) {
+      .col-custom {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="index.html">Úvod <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index2.html">Typy <i class="fa-solid fa-file"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index3.html">Historie <i class="fa-solid fa-image"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index4.html">Generálové <i class="fa-solid fa-wand-magic-sparkles"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index5.html">Info <i class="fa-solid fa-wand-magic-sparkles"></i></a>
+        </li>
+        <span class="visually-hidden">(current)</span>
+  </nav>
+  <div class="container mt-4">
+    <h1 class="mb-4">Generálové letectva za druhé světové války</span></h1>
+    <div class="d-flex flex-wrap">
+      <div class="col-custom p-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-half image-half">
+              <img src="Carl_Spaatz.jpg" alt="Carl Spaatz" />
+              <span class="fi fi-us"></span>
+            </div>
+            <div class="card-half text-half">
+              <h5>Carl Spaatz <span class="fi fi-us"></span></h5>
+              <p>Velitel USAAF (United States Army Air Forces)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-custom p-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-half image-half">
+              <img src="Hugh_Dowding.jpg" alt="Hugh Dowding" />
+              <span class="fi fi-gb"></span>
+            </div>
+            <div class="card-half text-half">
+              <h5>Hugh Dowding <span class="fi fi-gb"></span></h5>
+              <p>Velitel britského RAF (Royal Air Force)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-custom p-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-half image-half">
+              <img src="Wolfram.jpg" alt="Wolfram von Richthofen" />
+              <span class="fi fi-de"></span>
+            </div>
+            <div class="card-half text-half">
+              <h5>Wolfram von Richthofen <span class="fi fi-de"></span></h5>
+              <p>Německý letecký maršál Luftwaffe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="node_modules/bootswatch/dist/lux/bootstrap.min.css" rel="stylesheet">
+  <link href="node_modules/flag-icons/css/flag-icons.min.css">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .carousel {
+      width: 100%;
+      max-width: 100vw;
+      overflow: hidden;
+      position: relative;
+      background-color: #000;
+      color: white;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 500px;
+    }
+
+    .carousel-image {
+      flex: 1;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .carousel-text {
+      flex: 1;
+      padding: 2rem;
+      background-color: #111;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .carousel-text h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .carousel-text p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .carousel-indicators {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+
+    .carousel-indicators button {
+      border: none;
+      width: 15px;
+      height: 15px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: #555;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .carousel-indicators button.active {
+      background-color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-slide {
+        flex-direction: column;
+      }
+
+      .carousel-image, .carousel-text {
+        width: 100%;
+        height: 250px;
+      }
+
+      .carousel-text {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="index.html">Úvod <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index2.html">Typy <i class="fa-solid fa-file"></i></a>
+          <span class="visually-hidden">(current)</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index3.html">Historie <i class="fa-solid fa-image"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index4.html">Generálové <i class="fa-solid fa-wand-magic-sparkles"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index5.html">Info <i class="fa-solid fa-wand-magic-sparkles"></i></a>
+        </li>
+  </nav>
+  <div id="demo" class="carousel slide container p-3 my-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row g-2">
+          <div class="col-12 col-lg-6">
+            <img src="B29.jpg" class="d-block w-100 rounded-4 border" style="object-fit: cover;" alt="Slide 2">
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center rounded-4 border"
+            style="background-color: rgb(48, 54, 58); padding: 32px;">
+            <h3 class="text-light">B29 americký bombárdér</h3>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row g-2">
+          <div class="col-12 col-lg-6">
+            <img src="37B.jpg" class="d-block w-100 rounded-4 border" style="object-fit: cover;" alt="Slide 2">
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center rounded-4 border"
+            style="background-color: rgb(48, 54, 58); padding: 32px;">
+            <h3 class="text-light">37B Polský bombardér</h3>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row g-2">
+          <div class="col-12 col-lg-6">
+            <img src="PZL.jpg" class="d-block w-100 rounded-4 border" style="object-fit: cover;" alt="Slide 2">
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center rounded-4 border"
+            style="background-color: rgb(48, 54, 58); padding: 32px;">
+            <h3 class="text-light">PZl-89 polský bojovník</h3>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row g-2">
+          <div class="col-12 col-lg-6">
+            <img src="DES.jpg" class="d-block w-100 rounded-4 border" style="object-fit: cover;" alt="Slide 2">
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center rounded-4 border"
+            style="background-color: rgb(48, 54, 58); padding: 32px;">
+            <h3 class="text-light">Spitfire britský bojovník</h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</body>
+  

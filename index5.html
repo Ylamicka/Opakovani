@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="node_modules/bootswatch/dist/lux/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/flag-icons/css/flag-icons.min.css">
+    <title>Document</title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: 2fr 1fr 1fr;
+          grid-template-rows: auto auto;
+          gap: 16px;
+          padding: 16px;
+        }
+        .main-article, .small-article {
+          position: relative;
+          overflow: hidden;
+          color: white;
+          cursor: pointer;
+        }
+        .main-article {
+          grid-column: 1 / 2;
+          grid-row: 1 / 3;
+        }
+        .main-article img, .small-article img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          filter: brightness(0.5);
+          transition: filter 0.3s ease;
+        }
+        .main-article:hover img, .small-article:hover img {
+          filter: brightness(0.7);
+        }
+        .content {
+          position: absolute;
+          bottom: 16px;
+          left: 16px;
+          right: 16px;
+          z-index: 10;
+        }
+        .tag {
+          background-color: #e60049;
+          padding: 6px 12px;
+          font-weight: bold;
+          width: max-content;
+          margin-bottom: 12px;
+        }
+        h2, h3 {
+          margin: 0 0 12px 0;
+        }
+        .date {
+          font-weight: normal;
+          font-size: 14px;
+        }
+      </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link ms-3" href="index.html">Úvod <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Typy <i class="fa-solid fa-file"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Historie <i class="fa-solid fa-image"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index4.html">Generálové <i
+                            class="fa-solid fa-wand-magic-sparkles"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index5.html">Info <i
+                            class="fa-solid fa-wand-magic-sparkles"></i></a>
+                    <span class="visually-hidden">(current)</span>
+                </li>
+    </nav>
+
+    <div class="container">
+        <div class="main-article">
+          <img src="ddd.jpg" alt="Válečné boje" />
+          <div class="content">
+            <div class="tag">VÁLEČNÉ NOVINKY - HLAVNÍ TÉMA</div>
+            <h2>V sobotu prudké boje na hranicích Ukrajiny a Ruska</h2>
+            <div class="date">11. 9. 2025</div>
+          </div>
+        </div>
+      
+        <div class="small-article">
+          <img src="ccc.jfif" alt="Civilisté v ohrožení" />
+          <div class="content">
+            <div class="tag">ZPRÁVY</div>
+            <h3>Informace pro civilisty v ohrožených oblastech</h3>
+            <div class="date">12. 9. 2025</div>
+          </div>
+        </div>
+      
+        <div class="small-article">
+          <img src="sss.jpg" alt="Strategie vojenských sil" />
+          <div class="content">
+            <div class="tag">ANALÝZA</div>
+            <h3>Strategie vojenských sil v Sýrii se mění</h3>
+            <div class="date">12. 9. 2025</div>
+          </div>
+        </div>
+      
+        <div class="small-article">
+          <img src="mmm.jpg" alt="Nový generál" />
+          <div class="content">
+            <div class="tag">REPORTÁŽ</div>
+            <h3>Nový generál ukazuje silné vedení armády</h3>
+            <div class="date">11. 9. 2025</div>
+          </div>
+        </div>
+      
+        <div class="small-article">
+          <img src="hhh.jpeg" alt="Expert na konflikty" />
+          <div class="content">
+            <div class="tag">ROZHOVOR</div>
+            <h3>Expert na konflikty hodnotí současnou situaci</h3>
+            <div class="date">11. 9. 2025</div>
+          </div>
+        </div>
+      
+      </div>
+
+</body>
+
+</html>
